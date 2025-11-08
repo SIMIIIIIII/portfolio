@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: auto;
+  height: auto;
+  border: 1px solid rgb(15, 16, 17);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.comment {
+  max-width: 500px;
+  height: auto;
+  background: white;
+  padding-right: 0.5cm;
+  padding-left: 0.5cm;
+  margin-left: auto;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 270px;
+  border: 2px solid black;
+}
+
+.content {
+  margin-top: 271px;
+}
+
+.container h1{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.container h2{
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.citation {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  height: auto;
+  border: 1px solid rgb(15, 16, 17);
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 500px;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .citation {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+
+.menu {
+  width: 100%;
+  background: #3a7e99;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  display: flex;
+  position: fixed;
+  top: 200px;
+  position: absolute;
+}
+
+.logo-div {
+  width: 100%;
+  height: auto;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  position: absolute;
+}
+
+
+.menu a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse; /* Remove gaps between cells */
+  table-layout: fixed; /* Ensure equal column widths */
+}
+
+/* Style table cells */
+td {
+  border: 1px solid black; /* Optional: visible borders */
+  text-align: center; /* Center content */
+  vertical-align: middle; /* Vertically center content */
+  overflow: auto; /* Handle overflow content */
+  border: 1px solid white;
+  }
+
+/* Ensure rows are evenly distributed */
+tr {
+  height: 33.33%; /* Adjust based on number of rows (e.g., 100% / 3 for 3 rows) */
+  border: 1px solid white;
+}
+
+.my-textarea {
+  resize: none;
+  padding: 3px 7px;
+  margin: 5px;
+}
