@@ -286,3 +286,32 @@ tr {
   padding: 3px 7px;
   margin: 5px;
 }
+
+.project-img{
+  width: 100%;
+}
+
+.desc{
+  text-align: center;
+}
+
+.nav-container{
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: auto;
+  height: auto;
+  border: 1px solid rgb(15, 16, 17);
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-index {
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: center;
+}
