@@ -22,7 +22,7 @@ const Header = () => {
         </table>
       </div>
       <div className="menu">
-          <Link to="/">Accueil</Link>
+          <Link to="/">Home</Link>
           <Link to="/projects">My Projects</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/about">About me</Link>
