@@ -150,15 +150,33 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .logo-div h1 {
+    font-size: 1.2rem;
+  }
+
+  .logo-div h2 {
+    font-size: 0.9rem;
+  }
+
+  .logo-div {
+    height: auto;
+    min-height: 120px;
+  }
+
   .menu {
     flex-direction: column;
     align-items: center;
+    top: 120px;
   }
 
   .menu a {
     width: 100%;
     text-align: center;
     padding: 15px 0;
+  }
+
+  .content {
+    margin-top: calc(120px + 200px);
   }
 
   .container {
@@ -172,7 +190,15 @@ footer {
   }
 
   .logo {
-    width: 80px;
+    width: 60px;
+  }
+
+  .comment {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 20px 10px;
   }
 }
 
