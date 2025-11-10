@@ -1,5 +1,7 @@
 # Portfolio
 
+🌐 **Live Site:** [www.simeonlama.dev](https://www.simeonlama.dev)
+
 Personal portfolio website built with React and deployed on GitHub Pages.
 
 ## Prerequisites
@@ -46,7 +48,7 @@ To deploy:
 npm run deploy
 ```
 
-The site will be available at: [https://SIMIIIIIII.github.io/portfolio](https://SIMIIIIIII.github.io/portfolio)
+The site is available at: [www.simeonlama.dev](https://www.simeonlama.dev)
 
 ## Project Structure
 
