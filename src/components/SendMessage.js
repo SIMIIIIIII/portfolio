@@ -11,7 +11,7 @@ const SendMessage = ({onSend}) => {
         e.preventDefault()
 
         if (!name || !mail || !message){
-            alert('Please type your fill all field')
+            alert('Please fill all field')
             return
         }
         if (!validator.isEmail(mail)){
