@@ -1,112 +1,104 @@
 # Portfolio
 
+Personal portfolio website built with React and deployed on GitHub Pages.
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
 - npm or yarn
-- MongoDB (for database)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/SIMIIIIIII/portfolio.git
 cd portfolio
 ```
 
-2. Install server dependencies:
+2. Install dependencies:
 ```bash
-cd server
 npm install
-```
-
-3. Install client dependencies:
-```bash
-cd ../client
-npm install
-```
-
-## Configuration
-
-Create a `.env` file in the `server` directory with the following variables:
-```
-MONGODB_URI=<your-mongodb-connection-string>
-PORT=5000
 ```
 
 ## Running the Project
 
 ### Development Mode
 
-1. Start the server (from the `server` directory):
-```bash
-npm run dev
-```
-This will start the server with nodemon on port 5000.
-
-2. Start the client (from the `client` directory):
+Start the development server:
 ```bash
 npm start
 ```
-This will start the React development server on port 3000.
+The app will open at [http://localhost:3000](http://localhost:3000)
 
-### Production Mode
+### Production Build
 
-1. Build the client:
+Create an optimized production build:
 ```bash
-cd client
 npm run build
 ```
 
-2. Start the server:
+## Deployment
+
+This project is configured for GitHub Pages deployment.
+
+To deploy:
 ```bash
-cd ../server
-npm start
+npm run deploy
 ```
+
+The site will be available at: [https://SIMIIIIIII.github.io/portfolio](https://SIMIIIIIII.github.io/portfolio)
 
 ## Project Structure
 
 ```
 portfolio/
-├── client/          # React frontend
-│   ├── public/      # Static files
-│   └── src/         # React components and pages
-│       ├── components/
-│       ├── menus/
-│       └── App.js
-└── server/          # Express backend
-    ├── models/      # MongoDB models
-    ├── routes/      # API routes
-    └── server.js
+├── public/          # Static files
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+└── src/             # React source code
+    ├── App.js
+    ├── index.js
+    ├── index.css
+    ├── components/  # Reusable components
+    │   ├── Button.js
+    │   ├── Competences.js
+    │   ├── Experience.js
+    │   ├── Formations.js
+    │   ├── Langues.js
+    │   ├── Loisirs.js
+    │   ├── Profil.js
+    │   └── SendMessage.js
+    ├── menus/       # Page components
+    │   ├── About.js
+    │   ├── Contact.js
+    │   ├── Footer.js
+    │   ├── Header.js
+    │   ├── Home.js
+    │   └── Projects.js
+    ├── images/
+    └── files/
 ```
 
 ## Features
 
 - Portfolio website with CV format
-- Comment system
-- Contact form
 - Responsive design
+- Contact information display
+- Project showcase
+- About section
 
 ## Technologies Used
 
-### Frontend
 - React 19
-- React Icons
 - React Router DOM
-
-### Backend
-- Express
-- MongoDB with Mongoose
-- CORS
-- Nodemailer
+- React Icons
+- Validator (for form validation)
+- GitHub Pages (hosting)
 
 ## Scripts
 
-### Client
 - `npm start` - Run development server
-- `npm build` - Build for production
+- `npm run build` - Build for production
 - `npm test` - Run tests
-
-### Server
-- `npm start` - Run production server
-- `npm run dev` - Run development server with nodemon
+- `npm run deploy` - Deploy to GitHub Pages
