@@ -1,6 +1,26 @@
 import { FaPhone, FaEnvelopeOpen, FaLinkedin, FaGithub, FaDiscord} from 'react-icons/fa';
 import SendMessage from '../components/SendMessage';
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+
+  const onSend = async ({name, mail, message, sexe}) => {
+    try {
+      await emailjs.send(
+        'service_ujtzx1a',
+        'template_4xe4mc9',
+        {
+          from_name: name,
+          from_email: mail,
+          message: message,
+          sexe : sexe
+        },
+        "kzx07wjx21LxvD7wh"
+      );
+      alert('Message sent!');
+    } catch (error) {
+      alert('Failed to send');
+    }
+  };
   return (
     <div className='content'>
       <div className='citation'>
@@ -15,7 +35,7 @@ const Contact = () => {
         <p> <FaGithub/> GitHub: <a href="https://github.com/SIMIIIIIII/" target="_blank" rel="noopener noreferrer">SIMIIIIIII</a></p>
         <p> <FaDiscord/> Discord: @thesim8886</p>
       </div>
-      <div className="container"><SendMessage/></div>
+      <div className="container"><SendMessage onSend={onSend}/></div>
     </div>
   )
 }
