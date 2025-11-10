@@ -9,8 +9,8 @@ const Contact = () => {
         'service_ujtzx1a',
         'template_4xe4mc9',
         {
-          from_name: name,
-          from_email: mail,
+          name: name,
+          email: mail,
           message: message,
           sexe : sexe
         },

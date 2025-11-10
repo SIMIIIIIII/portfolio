@@ -5,7 +5,7 @@ const SendMessage = ({onSend}) => {
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
     const [message, setMessage] = useState('')
-    const [sexe, setSexe] = useState('')
+    const [sexe, setSexe] = useState('Homme')
     
     const onSubmit = (e) => {
         e.preventDefault()
@@ -26,12 +26,12 @@ const SendMessage = ({onSend}) => {
 
   return (
     <form className="add-form" onSubmit={onSubmit}>
-        <label for="cars">Sexe: </label>
+        <label htmlFor="sexe">Sexe: </label>
 
-        <select onChange={(e) => setSexe(e.target.selectedOptions.value)}>
-            <option value="M">Homme</option>
-            <option value="F">Femme</option>
-            <option value="A">Autres</option>
+        <select id="sexe" value={sexe} onChange={(e) => setSexe(e.target.value)}>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            <option value="Autres">Autres</option>
         </select>
 
         <div className="form-control">
