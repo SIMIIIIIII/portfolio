@@ -8,7 +8,9 @@ const Info = () => {
         title: "Deplacity",
         description: "A Flask web application for analyzing traffic and mobility data in Belgian cities.",
         github: "https://github.com/SIMIIIIIII/deplacity",
-        website: "https://web-production-37f78.up.railway.app/"
+        website: "https://web-production-37f78.up.railway.app/",
+        citation: "On ne peut pas comprendre une ville sans utiliser son système de moyens de transport public.",
+        auteur: "Erol Ozan"
     }
 
     const project2 = {
@@ -16,6 +18,8 @@ const Info = () => {
         title: "My Malloc",
         description: "In this C project, I create my own malloc function and its free version",
         github: "https://github.com/SIMIIIIIII/my_malloc",
+        citation: "La mémoire, c’est l’imagination à l’envers.",
+        auteur: "Daniel Pennac"
     }
 
     const project3 = {
@@ -23,7 +27,8 @@ const Info = () => {
         title: "Portfolio",
         description: "Personal portfolio website built with React and deployed on GitHub Pages.",
         github: "https://github.com/SIMIIIIIII/portfolio",
-        website: "www.simeonlama.dev"
+        citation: "Tous les chemins mènent à soi.",
+        auteur: "Jacques Lanzmann"
     }
 
     const tab = [project1, project2, project3];

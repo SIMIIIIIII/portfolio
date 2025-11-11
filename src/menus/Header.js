@@ -1,4 +1,4 @@
-import profileImage from '../images/simeon.JPG'
+import profileImage from '../images/simeon.jpeg'
 import { Link } from "react-router-dom"
 
 

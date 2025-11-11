@@ -1,0 +1,4 @@
+image,title,description,github,website,citation,auteur
+img1,Deplacity, A Flask web application for analyzing traffic and mobility data in Belgian cities.,https://github.com/SIMIIIIIII/deplacity,https://web-production-37f78.up.railway.app/,On ne peut pas comprendre une ville sans utiliser son système de moyens de transport public.,Erol Ozan
+img2,My Malloc,In this C project I create my own malloc function and its free version,https://github.com/SIMIIIIIII/my_malloc,,La mémoire c’est l’imagination à l’envers.,Daniel Pennac
+img3,Portfolio,Personal portfolio website built with React and deployed on GitHub Pages.,https://github.com/SIMIIIIIII/portfolio,,Tous les chemins mènent à soi.,Jacques Lanzmann

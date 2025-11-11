@@ -1,18 +1,30 @@
 import Project from '../components/Project';
 import Button from '../components/Button'
-import Info from '../files/Infos'
-import { useState } from 'react';
+import { loadProjectsFromCSV } from '../files/InfosCSV'
+import { useState, useEffect } from 'react';
 
 const Projects = () => {
-  const info = Info();
+  const [info, setInfo] = useState([]);
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    loadProjectsFromCSV((projects) => {
+      setInfo(projects);
+    });
+  }, []);
   
+  if (info.length === 0) {
+    return <div className="container">Loading projects...</div>;
+  }
+
   return (
     <div className="content">
-      <div className='citation'>
-        <p>Talk is cheap. Show me the code</p>
-        ~ Limus Torvalds ~
-      </div>
+      {info[index].citation && 
+        <div className='citation'>
+          <p>{info[index].citation}</p>
+          ~ {info[index].auteur} ~
+        </div>
+      }
       <Project info = {info[index]}/>
       <div className="nav-container">
         {index > 0 && <Button color="black" text="Prev" onClick={() => setIndex(index-1)}/>} 
